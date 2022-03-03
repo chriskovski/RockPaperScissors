@@ -7,6 +7,10 @@ function computerPlay(x) {
 
 
 function playRound() { 
+    let playerPrompt = prompt("What's your choice? (Rock, Paper, Scissors)").toLowerCase();
+    let playerSelect = playerPrompt.charAt(0).toUpperCase() + playerPrompt.slice(1);
+    const computerSelect = computerPlay();
+    
     if (playerSelect == choice[0] && computerSelect == choice[1]) {
         console.log("You Lose! Paper beats Rock!");
     }else if (playerSelect == choice[0] && computerSelect == choice[2]) {
@@ -24,6 +28,11 @@ function playRound() {
     }  
 }
 
-let playerPrompt = prompt("What's your choice? (Rock, Paper, Scissors)").toLowerCase();
-let playerSelect = playerPrompt.charAt(0).toUpperCase() + playerPrompt.slice(1);
-const computerSelect = computerPlay();
+function game() {
+    let rounds = parseInt(prompt("How many rounds you want to play?: "));
+    for (i = 0; i < rounds; i++) {
+        playRound();
+    }
+}
+
+game();
