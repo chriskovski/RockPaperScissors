@@ -1,7 +1,6 @@
 let choice = ['Rock', 'Paper', 'Scissors'];
 let playerSelect = "";
 
-const scoreboard = document.getElementById("scoreboard");
 const results = document.getElementById("results");
 
 let playerPts = 0;
@@ -51,32 +50,32 @@ function playRound() {
   
   if(playerPts < 3 && comPts < 3){
     if (playerSelect == choice[0] && computerSelect == choice[1]) {
-      p.textContent = `You Lose!\n${computerSelect} beats ${playerSelect}!`;
+      p.textContent = `Your Pick: ${playerSelect}.\r\nComputers Pick: ${computerSelect}.\r\nComputer Won!\r\n`;
       comPts++;
       computer.innerHTML = comPts;
       results.appendChild(p);
     }else if (playerSelect == choice[0] && computerSelect == choice[2]) {
-      p.textContent = `You Win!\n${playerSelect} beats ${computerSelect}!`;
+      p.textContent = `Your Pick: ${playerSelect}.\r\nComputers Pick: ${computerSelect}.\r\nYou Won!\r\n`;
       playerPts++;
       player.innerHTML = playerPts;
       results.appendChild(p);
     }else if (playerSelect == choice[1] && computerSelect == choice[0]) {
-      p.textContent = `You Win!\n${playerSelect} beats ${computerSelect}!`;
+      p.textContent = `Your Pick: ${playerSelect}.\r\nComputers Pick: ${computerSelect}.\r\nPlayer Won!\r\n`;
       playerPts++;
       player.innerHTML = playerPts;
       results.appendChild(p);
     }else if(playerSelect == choice[1] && computerSelect == choice[2]) {
-      p.textContent = `You Lose!\n${computerSelect} beats ${playerSelect}!`;
+      p.textContent = `Your Pick: ${playerSelect}.\r\nComputers Pick: ${computerSelect}.\r\nComputer Won!\r\n`;
       comPts++;
       computer.innerHTML = comPts;
       results.appendChild(p);
     }else if (playerSelect == choice[2] && computerSelect == choice[0]) {
-      p.textContent = `You Lose!\n${computerSelect} beats ${playerSelect}!`;
+      p.textContent = `Your Pick: ${playerSelect}.\r\nComputers Pick: ${computerSelect}.\r\nComputer Won!\r\n`;
       comPts++;
       computer.innerHTML = comPts;
       results.appendChild(p);
     }else if (playerSelect == choice[2] && computerSelect == choice[1]) {
-      p.textContent = `You Win!\n${playerSelect} beats ${computerSelect}!`;
+      p.textContent = `Your Pick: ${playerSelect}.\r\nComputers Pick: ${computerSelect}.\r\nPlayer Won!`;
       playerPts++;
       player.innerHTML = playerPts;
       results.appendChild(p);
@@ -86,10 +85,10 @@ function playRound() {
     }
   }else{
     if (playerPts > comPts){
-      p.textContent = `Victory! Final Score: Player ${playerPts} : ${comPts} Computer\n\n`;
+      p.textContent = `Victory! Final Score: Player ${playerPts} : ${comPts} Computer\r\n`;
       results.appendChild(p);
     }else if (comPts > playerPts){
-      p.textContent = `Too bad! Final Score: Player ${playerPts} : ${comPts} Computer\n\n`;
+      p.textContent = `Too bad! Final Score: Player ${playerPts} : ${comPts} Computer\r\n`;
       results.appendChild(p);
     }
   }  

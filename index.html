@@ -4,23 +4,27 @@
     <title>Rock Paper Scissors</title>
     <meta charset="UTF-8">
     <script src="scriptb.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Rock, Paper, Scissors!</h1>
     <h2>You will play against the Computer. First one with 3 Points wins the game.</h2>
-    <p>Choose your Fighter: </p>
+    <h3>Choose your Fighter: </h3>
     <div id="buttons">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+        <button id="rock"></button>
+        <button id="paper"></button>
+        <button id="scissors"></button>
     </div>
     <div id="scoreboard">
-        <p>Player:</p>
-        <div id="player"></div>
-        <p>Computer:</p>
-        <div id="computer"></div>
+        <p class="player">Player:
+            <div id="player"></div>
+        <p class="computer">Computer:
+            <div id="computer"></div></p>
     </div>
-    <div id="results"></div>
+    <div id="battlelog">
+        <h4>Battlelog:</h4>
+        <div id="results"></div>
+    </div>
     <button id="reset">Reset</button>
 </body>
 </html>
