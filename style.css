@@ -19,13 +19,13 @@ body {
   height: 12rem;
 }
 #scissors {
-  background-image: url('/pics/scissors.png/'); 
+  background-image: url('pics/scissors.png/'); 
 }
 #paper {
-  background-image: url('/pics/paper.png/');
+  background-image: url('pics/paper.png/');
 }
 #rock {
-  background-image: url('/pics/rock.png/');
+  background-image: url('pics/rock.png/');
 }
 #scissors:hover,
 #rock:hover,
