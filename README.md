@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+# Rock, Paper, Scissors
 
-You can use the [editor on GitHub](https://github.com/chriskovski/RockPaperScissors/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+A classic game of Rock, Paper, Scissors against a Computer.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Description
 
-### Markdown
+This was an exercise following the "The Odin Project"-Path in becoming a web developer.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This is on my first projects where I connected HTML, CSS & Javascript. Therefore it's not very nice looking, but it works.
+First I had lots of trouble using the DOM-Manipulation, also there are not many signs of responsiveness in this app. But as soon as I've figured the DOM-Part out, I even added a "Battlelog" feature. I'm really glad I made it work, as I knew only the real basics of Javascript.
 
-```markdown
-Syntax highlighted code block
+# How-To
 
-# Header 1
-## Header 2
-### Header 3
+The rules are unchanged: Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.
+So with every "move" (click on your choice), the computer makes a move, too. You can see in the Battlelog what happened (What you chose, what the Computer chose, and who wins the round). First one to win 3 rounds, wins the entire game. There is a Victory (or Defeat) Message in the Battlelog if the game is over.
 
-- Bulleted
-- List
+# Links & Wrap-Up
 
-1. Numbered
-2. List
+Check out the exercise here: https://www.theodinproject.com/lessons/foundations-rock-paper-scissors
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chriskovski/RockPaperScissors/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Lastly, thank you for reviewing my Code and/or my Application!
